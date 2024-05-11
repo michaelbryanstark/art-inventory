@@ -1,6 +1,6 @@
 # inventory/admin.py
 from django.contrib import admin
-from inventory.models import Product, Order, UserProfile
+from inventory.models import Product, UserProfile
 
 admin.site.site_header = "Inventory Admin"
 

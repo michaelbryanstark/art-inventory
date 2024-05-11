@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
-from inventory.models import Product, Order
+from inventory.models import Product
 
 
 class UserRegistry(UserCreationForm):
@@ -24,8 +24,3 @@ class ProductForm(forms.ModelForm):
         model = Product
         fields = ["artist", "location", "title", "description"]
 
-
-# class OrderForm(forms.ModelForm):
-#     class Meta:
-#         model = Order
-#         fields = ["product", "order_quantity"]
