@@ -12,13 +12,6 @@ class ProductAdmin(admin.ModelAdmin):
     search_fields = ["artist"]
 
 
-# class OrderAdmin(admin.ModelAdmin):
-#     model = Order
-#     list_display = ("product", "created_by", "order_quantity", "date")
-#     list_filter = ["date"]
-#     search_fields = ["product"]
-
-
 class UserProfileAdmin(admin.ModelAdmin):
     model = UserProfile
     list_display = ("user", "physical_address", "mobile", "picture")
@@ -27,6 +20,5 @@ class UserProfileAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Product, ProductAdmin)
-# admin.site.register(Order, OrderAdmin)
 admin.site.register(UserProfile, UserProfileAdmin)
 
