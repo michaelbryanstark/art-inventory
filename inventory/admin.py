@@ -7,7 +7,7 @@ admin.site.site_header = "Inventory Admin"
 
 class ProductAdmin(admin.ModelAdmin):
     model = Product
-    list_display = ("artist", "location", "title")
+    list_display = ("artist", "location", "title", "inventoryNum")
     list_filter = ["location"]
     search_fields = ["artist"]
 

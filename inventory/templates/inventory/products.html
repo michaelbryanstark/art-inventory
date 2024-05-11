@@ -13,6 +13,7 @@
                         <th scope="col">Title</th>
                         <th scope="col">Location</th>
                         <th scope="col">Description</th>
+                        <th scope="col">Inventory Number</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -22,6 +23,7 @@
                         <td>{{ product.title }}</td>
                         <td>{{ product.location }}</td>
                         <td>{{ product.description }}</td>
+                        <td>{{ product.inventoryNum }}</td>
                     </tr>
                     {% endfor %}
                 </tbody>
@@ -30,7 +32,7 @@
         {% if user.is_staff and user.is_superuser %}
         <div class="col-md-4">
             <form method="POST">
-                <h4>Add a New Product</h4>
+                <h4>Add a New Artwork</h4>
                 <hr>
                 {% csrf_token %}
                 {{ form|crispy}}

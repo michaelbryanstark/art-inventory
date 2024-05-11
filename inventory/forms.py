@@ -22,5 +22,5 @@ class UserRegistry(UserCreationForm):
 class ProductForm(forms.ModelForm):
     class Meta:
         model = Product
-        fields = ["artist", "location", "title", "description"]
+        fields = ["artist", "location", "title", "description", "inventoryNum"]
 

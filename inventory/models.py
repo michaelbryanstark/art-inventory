@@ -29,6 +29,7 @@ class Product(models.Model):
     location = models.CharField(max_length=20, choices=LOCATION, null=True)
     title = models.CharField(max_length=200, null=True)
     description = models.CharField(max_length=200, null=True)
+    inventoryNum = models.CharField(max_length=100, null=True)
     # inventory number
 
     def __str__(self) -> str:
