@@ -6,6 +6,7 @@
     <table class="table">
         <thead>
             <tr>
+                <th scope="col">Headshot</th>
                 <th scope="col">First Name</th>
                 <th scope="col">Last Name</th>
                 <th scope="col">Email</th>
@@ -15,6 +16,11 @@
         <tbody>
             {% for user in users %}
             <tr>
+                <td>
+                    <div class="col-md-4">
+                        <img style="border-radius: 50%; width: auto; height: auto;" class="img-thumbnail" src="{{ user.userprofile.picture.url }}" alt="profile picture">
+                    </div>
+                </td>
                 <td>{{ user.first_name}}</td>
                 <td>{{ user.last_name }}</td>
                 <td>{{ user.email }}</td>
